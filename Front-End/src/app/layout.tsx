@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "lama-dev-next-dashboard",
-  description: "lama-dev-next-dashboard",
+  title: "DIT Dashboard",
+  description: "DIT Dashboard",
 };
 
 export default function RootLayout({
