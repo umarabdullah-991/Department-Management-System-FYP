@@ -10,7 +10,7 @@ const data = [
   },
   {
     name: 'Girls',
-    count: 53,
+    count: 43,
     fill: '#FAE27C',
   },
   {
@@ -40,22 +40,20 @@ const CountChart = () => {
                     {/* <Legend iconSize={10} layout="vertical" verticalAlign="middle"  /> */}
                 </RadialBarChart>
             </ResponsiveContainer>
-            <Image src="/malefemale.png" alt="" width={50} height={50} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+            <Image src="/maleFemale.png" alt="" width={50} height={50} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
             </div>
             
             {/* BOTTOM */}
             <div className='flex justify-center gap-16'>
                 <div className='flex flex-col gap-1'>
-                    <div className='w-5 h-5 bg-customBlueLight rounded-full'>
-                        <h1 className='text-bold'>1,234</h1>
-                        <h2 className='text-xs text-gray-300'>Boys (55%)</h2>
-                    </div>
+                    <div className='w-5 h-5 bg-customBlueLight rounded-full' />
+                    <h1 className='font-bold'>1,234</h1>
+                    <h2 className='text-xs text-gray-300'>Boys (55%)</h2>
                 </div>
                 <div className='flex flex-col gap-1'>
-                    <div className='w-5 h-5 bg-customYellow rounded-full'>
-                        <h1 className='text-bold'>1,234</h1>
-                        <h2 className='text-xs text-gray-300'>Girls (45%)</h2>
-                    </div>
+                    <div className='w-5 h-5 bg-customYellow rounded-full' />
+                    <h1 className='font-bold'>1,134</h1>
+                    <h2 className='text-xs text-gray-300'>Girls (45%)</h2>
                 </div>
             </div>
         </div>
