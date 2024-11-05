@@ -15,7 +15,7 @@ type Teacher = {
   subjects: string[];
   classes: string[];
   address: string;
-  action: string;
+  // action: string;
 };
 
 const columns = [

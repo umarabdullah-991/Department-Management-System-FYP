@@ -12,10 +12,10 @@ type Student = {
   email: string;
   photo: string;
   phone?: string;
-  grade: number[];
+  grade: number;
   class: string;
   address: string;
-  action: string;
+//   action: string;
 };
 
 const columns = [
@@ -24,20 +24,16 @@ const columns = [
     accessor: "info",
   },
   {
-    header: "Teacher ID",
-    accessor: "teacherId",
+    header: "Student ID",
+    accessor: "studentId",
     className: "hidden md:table-cell",
   },
   {
-    header: "Subjects",
-    accessor: "subjects",
+    header: "Grade",
+    accessor: "grade",
     className: "hidden md:table-cell",
   },
-  {
-    header: "Classes",
-    accessor: "classes",
-    className: "hidden md:table-cell",
-  },
+  
   {
     header: "Phone",
     accessor: "phone",
