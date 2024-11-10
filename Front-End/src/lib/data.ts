@@ -254,6 +254,7 @@ export const parentsData = [
     name: "John Doe",
     students: ["Sarah Brewer"],
     email: "john@doe.com",
+    photo: "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -262,6 +263,8 @@ export const parentsData = [
     name: "Jane Doe",
     students: ["Cecilia Bradley"],
     email: "jane@doe.com",
+    photo:
+      "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -270,6 +273,8 @@ export const parentsData = [
     name: "Mike Geller",
     students: ["Fanny Caldwell"],
     email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -278,6 +283,7 @@ export const parentsData = [
     name: "Jay French",
     students: ["Mollie Fitzgerald", "Ian Bryant"],
     email: "mike@geller.com",
+    photo:"https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -286,6 +292,8 @@ export const parentsData = [
     name: "Jane Smith",
     students: ["Mable Harvey"],
     email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -294,6 +302,8 @@ export const parentsData = [
     name: "Anna Santiago",
     students: ["Joel Lambert"],
     email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -302,6 +312,8 @@ export const parentsData = [
     name: "Allen Black",
     students: ["Carrie Tucker", "Lilly Underwood"],
     email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -310,6 +322,8 @@ export const parentsData = [
     name: "Ophelia Castro",
     students: ["Alexander Blair"],
     email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -318,6 +332,8 @@ export const parentsData = [
     name: "Derek Briggs",
     students: ["Susan Webster", "Maude Stone"],
     email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
@@ -326,6 +342,8 @@ export const parentsData = [
     name: "John Glover",
     students: ["Stella Scott"],
     email: "mike@geller.com",
+    photo:
+      "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     address: "123 Main St, Anytown, USA",
   },
