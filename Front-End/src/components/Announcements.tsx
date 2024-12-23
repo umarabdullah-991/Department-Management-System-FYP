@@ -1,6 +1,7 @@
 import prisma from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 
+
 const Announcements = async () => {
   const { userId, sessionClaims } = auth();
   const role = (sessionClaims?.metadata as { role?: string })?.role;
@@ -32,7 +33,7 @@ const Announcements = async () => {
       </div>
       <div className="flex flex-col gap-4 mt-4">
         {data[0] && (
-          <div className="bg-customBlueLight rounded-md p-4">
+          <div className="bg-customBlueLighter rounded-md p-4">
             <div className="flex items-center justify-between">
               <h2 className="font-medium">{data[0].title}</h2>
               <span className="text-xs text-gray-400 bg-white rounded-md px-1 py-1">
