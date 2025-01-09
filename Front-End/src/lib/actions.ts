@@ -9,7 +9,7 @@ import {
   TeacherSchema,
 } from "./formValidationSchemas";
 import prisma from "./prisma";
-import { clerkClient } from "@clerk/nextjs/server";
+import { clerkClient, users } from "@clerk/nextjs/server";
 
 type CurrentState = { success: boolean; error: boolean };
 
@@ -142,7 +142,8 @@ export const createTeacher = async (
   data: TeacherSchema
 ) => {
   try {
-    const user = await clerkClient.users.createUser({
+    const clerk = await clerkClient();
+    const user = await clerk.users.createUser({
       username: data.username,
       password: data.password,
       firstName: data.name,
@@ -187,7 +188,7 @@ export const updateTeacher = async (
     return { success: false, error: true };
   }
   try {
-    const user = await clerkClient.users.updateUser(data.id, {
+    const user = await users.updateUser(data.id, {
       username: data.username,
       ...(data.password !== "" && { password: data.password }),
       firstName: data.name,
