@@ -87,10 +87,10 @@ const forms: {
   ),
   student: (setOpen, type, data, relatedData) => (
     <StudentForm
-      type={type}
-      data={data}
-      setOpen ={setOpen}
-      relatedData={relatedData}
+    type={type}
+    data={data}
+    setOpen={setOpen}
+    relatedData={relatedData}
     />
   ),
   exam: (setOpen, type, data, relatedData) => (
@@ -114,10 +114,10 @@ const FormModal = ({
   const size = type === "create" ? "w-8 h-8" : "w-7 h-7";
   const bgColor =
     type === "create"
-      ? "bg-lamaYellow"
+      ? "bg-customYellow"
       : type === "update"
-      ? "bg-lamaSky"
-      : "bg-lamaPurple";
+      ? "bg- customBlueLight"
+      : "bg-customPurple";
 
   const [open, setOpen] = useState(false);
 
