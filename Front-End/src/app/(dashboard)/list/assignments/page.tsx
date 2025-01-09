@@ -22,7 +22,7 @@ const AssignmentListPage = async ({
   searchParams: { [key: string]: string | undefined };
 }) => {
 
-  const { userId, sessionClaims } = auth();
+  const { userId, sessionClaims } = await auth();
   const role = (sessionClaims?.metadata as { role?: string })?.role;
   const currentUserId = userId;
   
@@ -171,10 +171,10 @@ const AssignmentListPage = async ({
         <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
           <TableSearch />
           <div className="flex items-center gap-4 self-end">
-            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-customYellow">
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-customYellow" title="Filter">
               <Image src="/filter.png" alt="" width={14} height={14} />
             </button>
-            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-customYellow">
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-customYellow" title="Sort">
               <Image src="/sort.png" alt="" width={14} height={14} />
             </button>
             {role === "admin" ||
