@@ -1,3 +1,4 @@
+import { UserButton } from '@clerk/nextjs';
 import Image from 'next/image';
 const Navbar = () => {
     return (
@@ -20,6 +21,7 @@ const Navbar = () => {
                 <span className='text-xs leading-3 font-medium'>John Doe</span>
                 <span className='text-[10px] text-gray-500 text-right'>Admin</span>
             </div>
+            <UserButton/>
          </div>
          </div>
     )
