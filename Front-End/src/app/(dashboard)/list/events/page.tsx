@@ -8,6 +8,7 @@ import { Class, Event, Prisma } from "@prisma/client";
 import Image from "next/image";
 import { auth } from "@clerk/nextjs/server";
 import FormModal from "@/components/FormModal";
+import { role } from "@/lib/utils";
 
 type EventList = Event & { class: Class };
 
