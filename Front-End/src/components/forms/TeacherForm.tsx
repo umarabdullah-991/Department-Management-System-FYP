@@ -196,12 +196,29 @@ const TeacherForm = ({
                 className="text-xs text-gray-500 flex items-center gap-2 cursor-pointer"
                 onClick={() => open()}
               >
-                <Image src="/upload.png" alt="" width={28} height={28} />
+                <Image
+                  src="/upload.png"
+                  alt="Upload Icon"
+                  width={28}
+                  height={28}
+                />
                 <span>Upload a photo</span>
               </div>
             );
           }}
         </CldUploadWidget>
+
+        {/* Show uploaded image preview */}
+        {img?.secure_url && (
+          <div className="mt-4">
+            <label className="text-xs text-gray-500">Image Preview</label>
+            <img
+              src={img.secure_url}
+              alt="Uploaded"
+              className="w-32 h-32 object-cover rounded-md mt-2"
+            />
+          </div>
+        )}
       </div>
       {state.error && (
         <span className="text-red-500">Something went wrong!</span>
