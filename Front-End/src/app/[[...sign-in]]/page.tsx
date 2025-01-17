@@ -19,9 +19,8 @@ const LoginPage = () => {
       router.push(`/${role}`);
     }
   }, [user, router]);
-
   return (
-    <div className="h-screen flex items-center justify-center bg-customBlueLighter">
+    <div className="h-screen flex items-center justify-center bg-customBlueLight">
       <SignIn.Root>
         <SignIn.Step
           name="start"

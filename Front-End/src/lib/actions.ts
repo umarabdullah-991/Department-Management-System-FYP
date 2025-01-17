@@ -9,7 +9,7 @@ import {
   TeacherSchema,
 } from "./formValidationSchemas";
 import prisma from "./prisma";
-import { clerkClient, users } from "@clerk/nextjs/server";
+import { clerkClient } from "@clerk/nextjs/server";
 
 type CurrentState = { success: boolean; error: boolean };
 
@@ -188,7 +188,8 @@ export const updateTeacher = async (
     return { success: false, error: true };
   }
   try {
-    const user = await users.updateUser(data.id, {
+    const clerk = await clerkClient();
+    const user = await clerk.users.updateUser(data.id, {
       username: data.username,
       ...(data.password !== "" && { password: data.password }),
       firstName: data.name,
@@ -232,7 +233,9 @@ export const deleteTeacher = async (
 ) => {
   const id = data.get("id") as string;
   try {
-    await clerkClient.users.deleteUser(id);
+    
+    const clerk = await clerkClient();
+    await clerk.users.deleteUser(id);
 
     await prisma.teacher.delete({
       where: {
@@ -263,7 +266,8 @@ export const createStudent = async (
       return { success: false, error: true };
     }
 
-    const user = await clerkClient.users.createUser({
+    const clerk = await clerkClient();
+    const user = await clerk.users.createUser({
       username: data.username,
       password: data.password,
       firstName: data.name,
@@ -306,7 +310,8 @@ export const updateStudent = async (
     return { success: false, error: true };
   }
   try {
-    const user = await clerkClient.users.updateUser(data.id, {
+    const clerk = await clerkClient();
+    const user = await clerk.users.updateUser(data.id, {
       username: data.username,
       ...(data.password !== "" && { password: data.password }),
       firstName: data.name,
@@ -348,7 +353,8 @@ export const deleteStudent = async (
 ) => {
   const id = data.get("id") as string;
   try {
-    await clerkClient.users.deleteUser(id);
+    const clerk = await clerkClient();
+    await clerk.users.deleteUser(id);
 
     await prisma.student.delete({
       where: {

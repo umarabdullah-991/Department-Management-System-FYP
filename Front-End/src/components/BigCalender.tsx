@@ -12,7 +12,7 @@ const BigCalendar = ({
 }: {
   data: { title: string; start: Date; end: Date }[];
 }) => {
-  const [view, setView] = useState<View>(Views.WORK_WEEK);
+  const [view,setView] = useState<View>(Views.WORK_WEEK);
 
   const handleOnChangeView = (selectedView: View) => {
     setView(selectedView);

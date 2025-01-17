@@ -9,25 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/elements": "^0.22.5",
-    "@clerk/nextjs": "^6.9.6",
+    "@clerk/elements": "^0.22.7",
+    "@clerk/nextjs": "^6.9.10",
     "@hookform/resolvers": "^3.9.1",
-    "@prisma/client": "^5.22.0",
+    "@prisma/client": "^6.2.1",
     "@types/react-big-calendar": "^1.15.0",
-    "d": "^1.0.2",
     "moment": "^2.30.1",
     "next": "14.2.5",
     "next-cloudinary": "^6.16.0",
-    "prisma": "^5.22.0",
+    "prisma": "^6.2.1",
     "react": "^18",
     "react-big-calendar": "^1.15.0",
     "react-calendar": "^5.1.0",
     "react-dom": "^18",
-    "react-hook-form": "^7.54.2",
-    "react-toastify": "^11.0.2",
+    "react-hook-form": "^7.53.2",
+    "react-toastify": "^11.0.3",
     "recharts": "^2.13.2",
     "ts-node": "^10.9.2",
-    "zod": "^3.24.1"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",
