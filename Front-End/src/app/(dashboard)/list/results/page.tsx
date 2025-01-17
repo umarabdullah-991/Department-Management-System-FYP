@@ -8,7 +8,6 @@ import { Prisma } from "@prisma/client";
 import Image from "next/image";
  
 import { auth } from "@clerk/nextjs/server";
-import FormContainer from "@/components/FormContainer";
 
 type ResultList = {
   id: number;
