@@ -91,10 +91,15 @@ The project is organized into the following structure:
 - `tsconfig.json`: TypeScript configuration file.
 
 ## Contributors
-
-- [Syed Aman Shah](https://github.com/amanxsyed)
 - [Umar Abdullah](https://github.com/umarabdullah-991)
+- [Syed Aman Shah](https://github.com/amanxsyed)
 
+**Contact Us:**
+
+If you have any questions or inquiries, you can reach out to us via email at
+
+- [umarabdullah.work@gmail.com](mailto:umarabdullah.work@gmail.com)
+- [amanxsyed@gmail.com](mailto:amanxsyed@gmail.com)
 
 ## License
 
