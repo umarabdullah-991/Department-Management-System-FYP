@@ -212,7 +212,7 @@ const TeacherForm = ({
         {img?.secure_url && (
           <div className="mt-4">
             <label className="text-xs text-gray-500">Image Preview</label>
-            <img
+            <Image
               src={img.secure_url}
               alt="Uploaded"
               className="w-32 h-32 object-cover rounded-md mt-2"
